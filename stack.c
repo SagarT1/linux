@@ -50,8 +50,8 @@ int pop()
     
 }
 void printstack()
-{
-    for(int i=top;i>=0; i--)
+{int i;
+    for( i=top;i>=0; i--)
     printf("%d ", s[i]);
     
 }
