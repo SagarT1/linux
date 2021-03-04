@@ -59,7 +59,7 @@ void printstack()
   {
   int i;
     for( i=top;i>=0; i--)
-    printf("%d ", s[i]);
+    printf("%d\n", s[i]);
   }
 }
 
