@@ -53,14 +53,16 @@ void printstack()
 {
   if(top==-1)
   {
-   printf("STACK IS EMPTY! can't print");
+   printf("\nSTACK IS EMPTY! can't print\n");
  }
   else
   {
   int i;
+    printf("\n");
     for( i=top;i>=0; i--)
     printf("%d\n", s[i]);
   }
+  printf("\n");
 }
 
 
@@ -70,7 +72,7 @@ int main()
     int ch;
 
     while(1){
-            printf("\nenter your choice:\n1) push \n2) pop \n3) print \n 4)exit ");
+            printf("\nenter your choice:\n1) push \n2) pop \n3) print \n 4)exit\n");
     scanf("%d", &ch);
     switch(ch)
     {
