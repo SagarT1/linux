@@ -34,7 +34,7 @@ void push()
     
 }
 
-int pop()
+void pop()
 {
     if(top==-1)
     printf("THE STACK IS EMPTY\n");
@@ -44,7 +44,7 @@ int pop()
         printf("\nthe popped elements is :%d\n", delement);
         --top;
     
-    return delement;    
+    //return delement;    
     }
     
     
