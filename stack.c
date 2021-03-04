@@ -33,6 +33,10 @@ void push()
     
     
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> ef6a4a17abcfbac1b63d91018d718542686b2642
 void pop()
 {
     if(top==-1)
@@ -43,7 +47,11 @@ void pop()
         printf("\nthe popped elements is :%d\n", delement);
         --top;
     
+<<<<<<< HEAD
    // return delement;    
+=======
+    //return delement;    
+>>>>>>> ef6a4a17abcfbac1b63d91018d718542686b2642
     }
     
     
