@@ -72,7 +72,7 @@ int main()
     int ch;
 
     while(1){
-            printf("\nenter your choice:\n1) push \n2) pop \n3) print \n 4)exit\n");
+            printf("\nenter your choice:\n1) push \n2) pop \n3) print \n4)exit\n");
     scanf("%d", &ch);
     switch(ch)
     {
