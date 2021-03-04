@@ -16,7 +16,7 @@ void push()
     
     
     
-    if( top>max)
+    if( top>=max)
     {
         printf("\nTHE STACK IS FULL \n");
     }else
