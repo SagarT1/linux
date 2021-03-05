@@ -153,6 +153,9 @@ void print()
 
 temp = first;
 
+  if(temp==NULL)
+      printf("Linked list empty\n");
+    
 while(temp!=NULL)
 
 {
