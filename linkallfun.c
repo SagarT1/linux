@@ -104,18 +104,9 @@ if(first==NULL)
 	printf("List is empty\n");
 	return;
 }
-if(temp->link==NULL)
-{
-	first=NULL;
-	free(temp);
-	--length;
-	return;
-}
 first=temp->link;
 free(temp);
 --length;
-
-
 }
 void insertAfter()
 {
