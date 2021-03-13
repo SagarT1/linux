@@ -49,14 +49,7 @@ if(first==NULL)
 printf("List is empty\n");
 return;
 }
-if(temp->link==NULL)
-{
-first=NULL;
-free(temp);
---length;
-return;
-}
-temp2=NULL;
+temp2=first;
 while(temp->link!=NULL)
 {
 	temp2=temp;
@@ -78,19 +71,21 @@ if(first==NULL)
 printf("List is empty\n");
 return;
 }
-if(temp->link==NULL)
-{
-deleteAtEnd();
-return;
-}
+
+
 printf("enter a pos\n");
 scanf("%d",&pos);
+if(pos==1)
+{
+deleteAtBeg();
+return;
+}
 if(pos<0 || pos>length)
 {
 	printf("\ninvalid pos\n");
 	return;
 }
-temp2=first; int i;
+temp2=NULL; int i;
 for(i=0; i<pos-1;i++)
 {
 	temp2=temp;
@@ -113,7 +108,7 @@ if(temp->link==NULL)
 {
 	first=NULL;
 	free(temp);
-	-length;
+	--length;
 	return;
 }
 first=temp->link;
