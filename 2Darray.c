@@ -9,7 +9,7 @@ int main()
    scanf("%d%d", &r,&c);
   
 int i,j;
-    arc= (int *)malloc(sizeof(int)*r); //rows 
+    *arc= (int *)malloc(sizeof(int)*r); //rows 
     
    for( i=0;i<r; i++) //run row times and get cols  each time
     arc[i]=(int *)malloc(sizeof(int)*c);
@@ -21,7 +21,7 @@ int i,j;
    {
        for( j=0;j<c;j++)
        {
-           arc[i][j]= number;
+       arc[i][j]= number;
            number++;
        }
        
@@ -32,7 +32,7 @@ int i,j;
    {
        for( j=0;j<c;j++)
        {
-           printf("%d\t",arc[i][j]);
+           printf("%d\t",*(*(arc+i)+j));
        }
        printf("\n");
    }
