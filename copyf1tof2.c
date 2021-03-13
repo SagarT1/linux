@@ -1,3 +1,5 @@
+//create file1 and write something
+//then it will be copied to file2
 #include<stdio.h>
 int main()
 {
@@ -5,13 +7,6 @@ int main()
   char ch;
   fp1=fopen("file1","r");
   if(fp1==NULL)
-  {
-    printf("File error");
-   return;
-  }
-
-  fp2=fopen("file1","r");
-  if(fp2==NULL)
   {
     printf("File error");
    return;
